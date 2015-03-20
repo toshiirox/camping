@@ -1,4 +1,12 @@
 <?php
 require 'class/autoload.php';
 
-$db = DBFactory::getMysqlConnexionWithPDO();
+try
+{
+    $db
+}
+catch (Exception $e)
+{
+    die('Erreur : ' . $e->getMessage());
+}
+?>
