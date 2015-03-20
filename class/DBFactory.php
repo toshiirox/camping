@@ -15,4 +15,4 @@ class DBFactory
     {
         return new MySQLi('mysql1.alwaysdata.net', 'canargot_bdd', 'canargot', 'canargot');
     }
-}
+} 
