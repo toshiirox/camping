@@ -1,12 +1,17 @@
 <?php
 require 'class/autoload.php';
 
-try {
+try
+{
 
-    $db = DBFactory::getMysqlConnexionWithPDO();
-    echo 'Connection successfull';
-
-} catch (Exception $e) {
-    echo 'Erreur :' . $e->getMessage();
+   $db = DBFactory::getMysqlConnexionWithPDO();
+   
+   echo 'Connection successfull';
+   $PrepREQ = new PreparationREQ($db);
+}
+	catch (Exception $e) {
+	die("Impossible de se connecter: " . $e->getMessage());
 }
 ?> 
+
+
