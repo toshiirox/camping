@@ -13,7 +13,7 @@ class PreparationREQ
     {
     	//variables renseign�es lors de la pr�paration des requ�tes
 	
-        $this->ReqSelectAll = $db->prepare("SELECT id, name, password FROM user ORDER BY name");
+        $this->ReqSelectAll = $db->prepare("SELECT * FROM Client");
 		
         $this->ReqSelectById = $db->prepare("SELECT id, name FROM user WHERE id = ?");
        
