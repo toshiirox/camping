@@ -3,7 +3,7 @@ require 'class/autoload.php';
 
 try
 {
-    $db
+    $db;
 }
 catch (Exception $e)
 {
