@@ -3,10 +3,11 @@ require 'class/autoload.php';
 
 try
 {
-    $db
+   $db = DBFactory::getMysqlConnexionWithPDO();
+   echo 'Connection successfull';
 }
 catch (Exception $e)
 {
-    die('Erreur : ' . $e->getMessage());
+   echo 'Erreur :'.$e->getMessage();
 }
 ?>
