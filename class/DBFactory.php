@@ -4,7 +4,7 @@ class DBFactory
 {
     public static function getMysqlConnexionWithPDO()
     {
-        $db = new PDO("mysql:host=duplicatnkbdd.mysql.db;dbname=duplicatnkbdd", "duplicatnkbdd", "2hc97zk4924A");
+        $db = new PDO("mysql:host=mysql1.alwaysdata.net;dbname=canargot_BDD", "canargot", "canargot");
 
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $db->exec("SET CHARACTER SET utf8");
@@ -13,6 +13,6 @@ class DBFactory
 
     public static function getMysqlConnexionWithMySQLi()
     {
-        return new MySQLi('duplicatnkbdd.mysql.db', 'duplicatnkbdd', '2hc97zk4924A', 'duplicatnkbdd');
+        return new MySQLi('mysql1.alwaysdata.net', 'canargot_BDD', 'canargot', 'canargot');
     }
 }
