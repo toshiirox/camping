@@ -1,7 +1,7 @@
 <?php
 include 'core/head.php';
-$identifiant=$_POST['Username'];
-$mot_de_passe=$_POST['Password'];
+$identifiant = $_POST['Username'];
+$mot_de_passe = $_POST['Password'];
 require_once 'Traitement.php';
 include 'core/header.php';
 include 'core/navbar.php';
@@ -13,15 +13,12 @@ $req->execute(array(
 
 $resultat = $req->fetch();
 
-if (!$resultat)
-{
+if (!$resultat) {
     print 'Erreur de mot de passe ou de login';
     ?>
     <a href="index.php">retour</a>
-    <?php
-}
-else
-{
+<?php
+} else {
     session_start();
     ?>
     <a href="index.php">retour</a>
