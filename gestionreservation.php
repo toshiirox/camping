@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
 <head>
     <!-- titre de la page -->
-    <title>Camping Canargot - H&ocirc;tellerie de Plein-Air - Accueil</title>
+    <title>Camping Canargot - H&ocirc;tellerie de Plein-Air - </title>
 
     <!-- balise m�ta pr�cisant le jeu de caract�re utilis� -->
     <meta http-equiv="Content-Type" content="text/HTML; charset=utf-8"/>
@@ -33,7 +33,6 @@
             <li><a href="bungalows.html">les bungalows</a></li>
             <li><a href="tarifs.html">Tarifs</a></li>
         </ul>
-
     </div>
     <!-- fin du div conteneurmenu  -->
 
