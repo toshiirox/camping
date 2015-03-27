@@ -30,7 +30,7 @@ else {
 // sélection de la base
 
     // on écrit la requête sql
-    $_SESSION['nb'] = $db->exec("INSERT INTO CLIENT(nom, prenom, email, adresse, telephone) VALUES('$nom','$prenom','$email','$adresse','$tel');");
+    $_SESSION['nb'] = $db->exec('INSERT INTO CLIENT(nom, prenom, email, adresse, telephone) VALUES("$nom","$prenom","$email","$adresse","$tel");');
 
     // on affiche le résultat pour le visiteur
 
