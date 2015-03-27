@@ -7,7 +7,5 @@
         <li><a href="activites.php">les activit&eacute;s</a></li>
         <li><a href="bungalows.php">les bungalows</a></li>
         <li><a href="tarifs.php">Tarifs</a></li>
-
-
     </ul>
 </div>
