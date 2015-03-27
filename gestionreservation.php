@@ -70,9 +70,22 @@ if (isset($_POST['Insertion'])) {
         <h1>Gestion des Réservations</h1>
 
         <form action="" method="post">
+        	<label for="selectEmplacement">Emplacement :</label>
+	        <input id="selectEmplacement" type="text" list="liste_Emplacements" name="lesEmplacements" required>
+			<datalist id="liste_Emplacements" >
            	<?php 
-           		$lignesResult= $db->query("SELECT * FROM SEJOUR");
+           		$db = DBFactory::getMysqlConnexionWithPDO();
+           		$lignesResult = $db->query("SELECT NOM FROM BUNGALOW;");
+           		// A FINIR 
+           		
+           		Foreach ($lignesResult as $uneLigne)
+           		{
+           			echo 'test';
+           			Var_dump($uneLigne) ; 
+           			echo '<option value="'+$uneLigne->NomDuChamp+'"/>';
+           		}
            	?>
+           	</datalist>
             <p><input type="submit" value="Ajout"  name="submitSejour"></p>
         </form>
 
