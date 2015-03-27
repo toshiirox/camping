@@ -39,7 +39,17 @@
 
 
     <div id="contenu">  <!-- contenu de la page -->
+        <h1>Gestion des clients</h1>
+        <form action="newclient.php" method="post" >
+            <p>Nom : <input type="text" name="nom" placeholder="Nom"/></p>
+            <p>Prénom : <input type="text" name="prenom" placeholder="Prénom"/></p>
+            <p>Email : <input type="text" name="email" placeholder="example@exe.com"/></p>
+            <p>Adresse : <input type="integer" name="adresse" placeholder="Adresse"/></p>
+            <p>Téléphone : <input type="text" name="tel" placeholder="0605459547"/></p>
 
+
+            <p><input type="submit" value="Insertion"></p>
+        </form>
     </div>
     <!-- fin du div contenu -->
 </div>
