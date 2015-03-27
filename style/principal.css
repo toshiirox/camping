@@ -22,18 +22,21 @@ body {
         position: absolute;
 	left: 180px;  /* marge à  gauche */
 	height:auto;  /* hauteur de l'élément */
-	border-width :10px;  /* largeur de la bordure */
+	
 	border-color: white;  /* couleur de la bordure */
 	border-style:inset;   /* style de la bordure   */
 	padding:5px;  /* marge intérieure de la bordure */
+	top:5vw;
 }
 
 #conteneurmenu {
-	position:absolute;
-	top : 80px; /*début de la zonne à partir de 80 px du haut gauche*/
-	margin-top:60px;  /* épaisseur de la marge en haut */
-	left:0px;  /* position par rapport à  la gauche */
-	width: 180px;  /* largeur de l'élément */
+	border: 1px dashed red;
+position: absolute;
+width: 10em;
+margin-left: 0.5vw;
+top: 5vw;
+padding: 1%;
+left: 0px;
 
 }
 
@@ -100,10 +103,13 @@ img {
 }
 
 #conteneurmenu li {
-	margin-top:50px;
-	font-family: "Comic Sans MS", georgia, arial;
-	font-size:15px;
-	font-weight:800;
+	margin-bottom: 50px;
+font-family: "Comic Sans MS",georgia,arial;
+font-size: 15px;
+font-weight: 800;
+}
+#conteneurmenu li:last-child {
+	margin-bottom:0px;
 }
 
 #conteneurmenu a {
