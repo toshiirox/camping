@@ -15,7 +15,7 @@
 
 <body>
 <div id="conteneur">  <!-- le conteneur entoure tout le contenu de la page -->
-    <a href="index.html"><img alt="logo du camping" src="image/logo_camping.jpg" class="gauche"/></a>
+    <a href="index.php"><img alt="logo du camping" src="image/logo_camping.jpg" class="gauche"/></a>
     <!-- permet de revenir � la page index en cliquant sur le logo du camping  -->
     <img alt="label qualite" src="image/camping_qualite.jpg" class="droite"/>
 
@@ -26,15 +26,7 @@
     <!-- fin du div entete -->
 
 
-    <div id="conteneurmenu">  <!-- menu apparaissant � gauche de la page -->
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="le_camping.html">le camping</a></li>
-            <li><a href="activites.html">les activit&eacute;s</a></li>
-            <li><a href="bungalows.html">les bungalows</a></li>
-            <li><a href="tarifs.html">Tarifs</a></li>
-        </ul>
-    </div>
+    <?php include("core/menu.php"); ?>
     <!-- fin du div conteneurmenu  -->
 
 

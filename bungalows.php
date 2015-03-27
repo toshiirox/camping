@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<? xml version = "1.0" encoding = "utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
@@ -16,7 +16,7 @@
 
 <body>
 <div id="conteneur">  <!-- le conteneur entoure tout le contenu de la page -->
-    <a href="index.html"><img alt="logo du camping" src="image/logo_camping.jpg" class="gauche"/></a>
+    <a href="index.php"><img alt="logo du camping" src="image/logo_camping.jpg" class="gauche"/></a>
     <img alt="label qualite" src="image/camping_qualite.jpg" class="droite"/>
 
 
@@ -24,17 +24,7 @@
         <p>Bienvenue au camping l'Escargot</p>
     </div>
     <!-- fin du div entete -->
-
-
-    <div id="conteneurmenu">  <!-- menu apparaissant � gauche de la page -->
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="le_camping.html">le camping</a></li>
-            <li><a href="activites.html">les activit&eacute;s</a></li>
-            <li><a href="bungalows.html">les bungalows</a></li>
-            <li><a href="tarifs.html">Tarifs</a></li>
-        </ul>
-    </div>
+    <?php include("core/menu.php"); ?>
     <!-- fin du div conteneurmenu  -->
 
     <div id="contenu">  <!-- contenu de la page -->
