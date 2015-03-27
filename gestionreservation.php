@@ -67,21 +67,13 @@ if (isset($_POST['Insertion'])) {
 
 
     <div id="contenu">  <!-- contenu de la page -->
-        <h1>Gestion des Réservations</h1>
+        <h1>Gestion des R�servations</h1>
 
-        <form action="gestionclient.php" method="post">
-            <p>Nom : <input type="text" name="nom" placeholder="Nom" required/></p>
-
-            <p>Prénom : <input type="text" name="prenom" placeholder="Prénom" required/></p>
-
-            <p>Email : <input type="text" name="email" placeholder="example@exe.com" required/></p>
-
-            <p>Adresse : <input type="integer" name="adresse" placeholder="Adresse" required/></p>
-
-            <p>Téléphone : <input type="text" name="tel" placeholder="0605459547" required/></p>
-
-
-            <p><input type="submit" value="Insertion"  name="Insertion"></p>
+        <form action="" method="post">
+           	<?php 
+           		$lignesResult= $db->query("SELECT * FROM SEJOUR");
+           	?>
+            <p><input type="submit" value="Ajout"  name="submitSejour"></p>
         </form>
 
     </div>
